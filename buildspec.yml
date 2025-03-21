@@ -27,7 +27,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Packaging application into a zip file...
-      - zip -r node-todo-app.zip * .[^.]* # Include all files and directories, including hidden files
+      - zip -r online-shop-app.zip * .[^.]* # Include all files and directories, including hidden files
       - echo Building the Docker image...
       - docker build -t $IMAGE_NAME:latest .
       - docker tag $IMAGE_NAME:latest $IMAGE_NAME:$IMAGE_TAG
